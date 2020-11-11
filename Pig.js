@@ -18,13 +18,21 @@ class Pig extends BaseClass {
      image(this.image, this.body.position.x, this.body.position.y, 50, 50);
      pop();
    }
-   
- }
-score(){
-  if(this.Visiblity>-1000 && this.Visiblity<0){
-    Score+=5;
+
   }
-}
+
+  score(){
+ if (this.Visiblity < 0 && this.Visiblity > -1005){
+      score++;
+    } 
+    if (this.Visiblity < 0 && this.Visiblity > -50){
+      snort.play();
+
+    }
+
+
+  }
+
 
 
 };
